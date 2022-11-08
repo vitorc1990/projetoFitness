@@ -19,6 +19,14 @@ app.get("/dicas/dicasdeexercicio", function(req, res) {
     res.sendFile(__dirname + "/public/dicasDeExercicio.html");
 })
 
+app.get("/calculadora", function(req, res) {
+    res.sendFile(__dirname + "/public/calculadoras.html");
+})
+
+app.get("/calculadora/agua", function(req, res) {
+    res.sendFile(__dirname + "/public/agua.html");
+})
+
 app.listen(4000, function(error) {
     if (error) {
         console.log("Erro ao iniciar")

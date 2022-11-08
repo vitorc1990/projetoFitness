@@ -11,6 +11,14 @@ app.get("/dicas", function(req, res) {
     res.sendFile(__dirname + "/public/dicas.html")
 })
 
+app.get("/dicas/dicasdesaude", function(req, res) {
+    res.sendFile(__dirname + "/public/dicasDeAlimentacao.html");
+})
+
+app.get("/dicas/dicasdeexercicio", function(req, res) {
+    res.sendFile();
+})
+
 app.listen(4000, function(error) {
     if (error) {
         console.log("Erro ao iniciar")

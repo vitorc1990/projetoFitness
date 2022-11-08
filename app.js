@@ -16,7 +16,7 @@ app.get("/dicas/dicasdesaude", function(req, res) {
 })
 
 app.get("/dicas/dicasdeexercicio", function(req, res) {
-    res.sendFile();
+    res.sendFile(__dirname + "/public/dicasDeExercicio.html");
 })
 
 app.listen(4000, function(error) {

@@ -4,7 +4,11 @@ var app = express();
 app.use(express.static("public"));
 
 app.get("/", function(req, res) {
-    res.sendFile(__dirname + "/public/homePage.Html");
+    res.sendFile(__dirname + "/public/homePage.html");
+})
+
+app.get("/dicas", function(req, res) {
+    res.sendFile(__dirname + "/public/dicas.html")
 })
 
 app.listen(4000, function(error) {

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Higieia - Saúde e bem-estar</title>
+    <script src="/funcoes.js"></script>
+</head>
+<body>
+    <h1>Gasto Energético Total</h1>
+    <h2>Informe os dados abaixo:</h2>
+    <label for="#">
+        <div>
+            <a>Homem</a>
+            <input type="radio" id="input_homem" name="genero" value="homem">
+            <a>Mulher</a>
+            <input type="radio" id="input_mulher" name="genero" value="mulher">
+        </div>
+        <a>Peso(kg)</a>
+        <input type="number" id="input_calc_peso" min="0">
+        <div>
+            <a>Altura(cm)</a>
+            <input type="number" id="input_calc_altura" min="0">
+        </div>
+        <div>
+            <a>Idade</a>
+            <input type="number" id="input_calc_idade" min="0">
+        </div>
+        <div>
+            <h2>Escolha o seu nível de atividade:</h2>
+            <a>Sedentário</a>
+            <input type="radio" id="input_sedentario" name="atividade" value="1.2">
+            <a>Levemente Ativo</a>
+            <input type="radio" id="input_leve" name="atividade" value="1.4">
+            <a>Moderadamente ativo</a>
+            <input type="radio" id="input_moderado" name="atividade" value="1.7">
+            <a>Altamente Ativo</a>
+            <input type="radio" id="input_alto" name="atividade" value="2">
+        </div>    
+    </label>
+    <button onclick="calculaGet()">Calcular</button>
+</body>
+</html>

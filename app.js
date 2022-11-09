@@ -31,6 +31,14 @@ app.get("/calculadora/agua/calculadoraagua", function(req, res) {
     res.sendFile(__dirname + "/public/calculadoraAgua.html");
 })
 
+app.get("/calculadora/get", function(req, res) {
+    res.sendFile(__dirname + "/public/get.html");
+})
+
+app.get("/calculadora/get/calculadoraget", function(req, res) {
+    res.sendFile(__dirname + "/public/calculadoraGet.html");
+})
+
 app.listen(4000, function(error) {
     if (error) {
         console.log("Erro ao iniciar")

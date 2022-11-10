@@ -25,8 +25,39 @@ function calculaImc() {
     var peso = document.getElementById("input_calc_imc_peso").value;
     var altura = document.getElementById("input_calc_imc_altura").value;
     var resultImc = peso / (altura * altura);
-    document.write(`O seu IMC é ${resultImc.toFixed(2)}`);
-    console.log(resultImc.toFixed(2));
+
+    if (resultImc < 16) {
+        document.write(`O seu IMC é ${resultImc.toFixed(2)}. Você está caracterizado como Magreza Grave`);
+        console.log(resultImc.toFixed(2));
+    }
+    if (resultImc >= 16 && resultImc <17) {
+        document.write(`O seu IMC é ${resultImc.toFixed(2)}. Você está caracterizado como Magreza Moderada`);
+        console.log(resultImc.toFixed(2));
+    }
+    if (resultImc >=17 && resultImc < 18.5) {
+        document.write(`O seu IMC é ${resultImc.toFixed(2)}. Você está caracterizado como Magreza Leve`);
+        console.log(resultImc.toFixed(2));
+    }
+    if (resultImc >=18.5 && resultImc < 25) {
+        document.write(`O seu IMC é ${resultImc.toFixed(2)}. Você está caracterizado como Saudável`);
+        console.log(resultImc.toFixed(2));
+    }
+    if (resultImc >= 25 && resultImc < 30) {
+        document.write(`O seu IMC é ${resultImc.toFixed(2)}. Você está caracterizado como Sobrepeso`);
+        console.log(resultImc.toFixed(2));
+    }
+    if (resultImc >= 30 && resultImc < 35) {
+        document.write(`O seu IMC é ${resultImc.toFixed(2)}. Você está caracterizado como Obesidade Grau I`);
+        console.log(resultImc.toFixed(2));
+    }
+    if (resultImc >=35 && resultImc < 40) {
+        document.write(`O seu IMC é ${resultImc.toFixed(2)}. Você está caracterizado como Obesidade Grau II (Severa)`);
+        console.log(resultImc.toFixed(2));
+    }
+    if (resultImc > 40) {
+        document.write(`O seu IMC é ${resultImc.toFixed(2)}. Você está caracterizado como Obesidade Grau III (Mórbida)`);
+        console.log(resultImc.toFixed(2));
+    }
 }
 
 function calculaTmb() {

@@ -27,8 +27,16 @@ app.get("/calculadora/agua", function(req, res) {
     res.sendFile(__dirname + "/public/agua.html");
 })
 
+app.get("/calculadora/imc", function(req, res) {
+    res.sendFile(__dirname + "/public/imc.html");
+})
+
 app.get("/calculadora/agua/calculadoraagua", function(req, res) {
     res.sendFile(__dirname + "/public/calculadoraAgua.html");
+})
+
+app.get("/calculadora/imc/calculadoraimc", function(req, res) {
+    res.sendFile(__dirname + "/public/calculadoraImc.html");
 })
 
 app.get("/calculadora/get", function(req, res) {

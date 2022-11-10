@@ -20,3 +20,11 @@ function calculaGet() {
         document.write(`Seu Gasto Energético Total é ${result * atividade} Kcal.`)
     }
 }
+
+function calculaImc() {
+    var peso = document.getElementById("input_calc_imc_peso").value;
+    var altura = document.getElementById("input_calc_imc_altura").value;
+    var resultImc = peso / (altura * altura);
+    document.write(`O seu IMC é ${resultImc.toFixed(2)}`);
+    console.log(resultImc.toFixed(2));
+}

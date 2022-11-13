@@ -39,6 +39,10 @@ app.get("/calculadora/proteinas", function(req, res) {
     res.sendFile(__dirname + "/public/proteinas.html");
 })
 
+app.get("/calculadora/carboidratos", function(req, res) {
+    res.sendFile(__dirname + "/public/carboidratos.html");
+})
+
 app.get("/calculadora/agua/calculadoraagua", function(req, res) {
     res.sendFile(__dirname + "/public/calculadoraAgua.html");
 })

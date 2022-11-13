@@ -55,6 +55,10 @@ app.get("/calculadora/tmb/calculadoratmb", function(req, res) {
     res.sendFile(__dirname + "/public/calculadoraTmb.html");
 })
 
+app.get("/calculadora/proteinas/calculadoraProteinas", function(req, res) {
+    res.sendFile(__dirname + "/public/calculadoraProteinas.html");
+})
+
 app.get("/calculadora/get", function(req, res) {
     res.sendFile(__dirname + "/public/get.html");
 })

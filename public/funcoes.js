@@ -76,3 +76,16 @@ function calculaTmb() {
     }
 
 }
+
+function calculaIp(){
+    var masc = document.getElementById("input_homem").value;
+    var fem = document.getElementById("input_mulher").value;
+    var peso = document.getElementById("input_calc_peso").value;
+    if (masc == "homem") {
+        var result = peso * 1.5;
+        document.write(`A ingestão de proteínas é ${result} gramas.`)
+    } else if (fem == "mulher") {
+        var result = peso * 1.5;
+        document.write(`A ingestão de proteínas é ${result} gramas.`)
+    }
+}

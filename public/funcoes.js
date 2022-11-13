@@ -83,5 +83,9 @@ function calculaIp(){
     document.write(`A ingestão de proteínas é ${result} gramas.`)
 }
 
-
+function calculaIc(){
+    var peso = document.getElementById("input_calc_peso").value;
+    var result = peso * 6;
+    document.write(`A ingestão de carboidratos é ${result} gramas.`)
+}
 

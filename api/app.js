@@ -78,5 +78,3 @@ app.listen(4000, function(error) {
         console.log(`App exemplo escutando na porta http://localhost:${4000}/`);
     }
 });
-
-module.exports = app;

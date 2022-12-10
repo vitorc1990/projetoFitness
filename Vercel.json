@@ -1,8 +1,9 @@
 {
     "version": 2,
+    "name": "projeto-fitness",
     "builds": [
         {
-            "src": "./app.js",
+            "src": "api/app.js",
             "use": "@vercel/node"
         }
     ],
@@ -10,7 +11,7 @@
 
         {
             "src": "/(.*)",
-            "dest": "/"
+            "dest": "api/app.js"
         }
     ]
 }

@@ -3,7 +3,7 @@
     "name": "projeto-fitness",
     "builds": [
         {
-            "src": "public/app.js",
+            "src": "./public/app.js",
             "use": "@vercel/node"
         }
     ],

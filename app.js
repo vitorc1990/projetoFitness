@@ -71,7 +71,7 @@ app.get("/calculadora/get/calculadoraget", function(req, res) {
     res.sendFile(__dirname + "/public/calculadoraGet.html");
 })
 
-app.listen(80, function(error) {
+app.listen(4000, function(error) {
     if (error) {
         console.log("Erro ao iniciar")
     }else {
